@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img width="60vw" src="iphone.png" alt="" />
+        <span>Home</span>
+      </nav>
+    </header>
+    <main>
+      <section class="search">
+        <h3>Is your website device friendly?</h3>
+
+        <input
+          onchange="page(this.value)"
+          type="text"
+          placeholder="Enter any website link"
+        />
+      </section>
+
+      <section class="midd">
+        <div>
+          <img src="x.jpg" alt="" />
+          <h3>Iphone X</h3>
+          <span>375 x 812</span>
+
+          <button onclick="size(375,812)">choose</button>
+        </div>
+        <div>
+          <img src="not10.jpg" alt="" />
+          <h3>Galaxy Note 10</h3>
+          <span>412 x 869</span>
+
+          <button onclick="size(412,869)">choose</button>
+        </div>
+
+        <div>
+          <img src="ipad.jpg" alt="" />
+          <h3>Ipad pro</h3>
+          <span>1024 x 1366</span>
+
+          <button onclick="size(1024,1366)">choose</button>
+        </div>
+
+        <div>
+          <img src="ma.avif" alt="" />
+          <h3>Mac OSX</h3>
+          <span>1920 x 1080</span>
+
+          <button onclick="size(1920,1080)">choose</button>
+        </div>
+      </section>
+      <section class="empty"></section>
+    </main>
+    <footer>
+      <p>2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
